@@ -43,6 +43,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 20px;
+  padding-inline: 20px;
 }
 #about {
   padding-top: 20px;
