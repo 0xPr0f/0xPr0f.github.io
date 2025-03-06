@@ -20,9 +20,29 @@ header a h1 {
   justify-content: center;
   font-size: 50px;
 }
+header a {
+  width: fit-content;
+}
 
 section {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.projectsdiv {
+  width: min(700px, 80%);
+  max-width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .projectsdiv {
+    width: 95%;
+    padding: 0 0.5rem;
+  }
 }
 
 .project {
@@ -31,12 +51,14 @@ section {
 
 .project h3 {
   margin-bottom: 10px;
+  width: fit-content;
 }
 
 a:link,
 a:visited {
   color: blue;
 }
+
 body {
   display: flex;
   flex-direction: column;
